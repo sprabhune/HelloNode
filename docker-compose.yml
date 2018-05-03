@@ -1,6 +1,6 @@
 services: 
   web:
-     image: sprabhune/HelloNode:master
+     image: sprabhune/Hellonode:master
      deploy:
       restart_policy: 
         condition: on-failure
