@@ -34,11 +34,8 @@
 
     }
 	    stage('Deploy') {
-        {
-		sh './deploy.sh'
-		}else{
-		 sh 'echo branch is not master,skip deploy.'
-		 }
+		echo 'Deploying to Staging'
+        sh './deploy.sh'
 		}
 	
     }
