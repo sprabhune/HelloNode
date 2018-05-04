@@ -23,9 +23,6 @@
                     }
         } 
         
-		stage('Deploy image') {
-        sh './deploy.sh'
-        }
-		
+
     }
     }
