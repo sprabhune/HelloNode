@@ -35,7 +35,7 @@
     }
 	    stage('Deploy') {
 		echo 'Deploying to Staging'
-		xargs chmod +x './deploy.sh'
+		//xargs chmod +x './deploy.sh'
         sh './deploy.sh'
 		}
 	
