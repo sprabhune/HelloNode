@@ -33,7 +33,7 @@
         }
 
     }
-	    stage('Deploy image') {
+	    stage('Deploy') {
         if(BRANCH_NAME.startsWith(master)){
 		sh './deploy.sh'
 		}else{
