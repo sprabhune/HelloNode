@@ -35,6 +35,7 @@
     }
 	    stage('Deploy') {
 		echo 'Deploying to Staging'
+		chmod -x deploy.sh
         sh './deploy.sh'
 		}
 	
