@@ -34,7 +34,7 @@
 
     }
 	    stage('Deploy') {
-        if(BRANCH_NAME.startsWith(master)){
+        if(env.BRANCH_NAME.startsWith(master)){
 		sh './deploy.sh'
 		}else{
 		 sh 'echo branch is not master,skip deploy.'
