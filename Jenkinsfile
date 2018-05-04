@@ -35,7 +35,7 @@
     }
 	    stage('Deploy') {
 		echo 'Deploying to Staging'
-		sh './scripts/deploy.sh'
+		sh '.Docker_Pipeline_Project/scripts/deploy.sh'
 		}
 	
     }
