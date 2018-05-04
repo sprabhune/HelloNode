@@ -35,7 +35,7 @@
     }
 	    stage('Deploy') {
 		echo 'Deploying to Staging'
-		sh './deploy.sh'
+		sh './scripts/deploy.sh'
 		}
 	
     }
