@@ -33,4 +33,12 @@
         }
 
     }
+	    stage('Deploy image') {
+        if(BRANCH_NAME.startsWith(master)){
+		sh './deploy.sh'
+		}else{
+		 sh 'echo branch is not master,skip deploy.'
+		 }
+		}
+	
     }
